@@ -1,0 +1,121 @@
+/* 
+  Localizable.strings (Russian)
+  GiftMind
+
+  Created by Рома Котов on 27.09.2025.
+*/
+
+// MARK: - General
+"app_name" = "GiftMind";
+"ok" = "ОК";
+"cancel" = "Отмена";
+"save" = "Сохранить";
+"edit" = "Редактировать";
+"delete" = "Удалить";
+"done" = "Готово";
+"add" = "Добавить";
+"loading" = "Загрузка...";
+"error" = "Ошибка";
+
+// MARK: - Navigation
+"calendar" = "Календарь";
+"upcoming" = "Предстоящие";
+"achievements" = "Достижения";
+"settings" = "Настройки";
+
+// MARK: - Calendar
+"birthday_tracker" = "Трекер Дней Рождения";
+"add_person" = "Добавить Человека";
+"add_first_person" = "Добавить Первого Человека";
+"no_upcoming_birthdays" = "Нет Предстоящих Дней Рождения";
+"add_people_to_start" = "Добавьте людей, чтобы начать отслеживать их дни рождения";
+"days_until_birthday" = "До дня рождения: %d дней";
+"today" = "Сегодня!";
+"soon" = "Скоро!";
+"days" = "%d дней";
+
+// MARK: - Person
+"personal_information" = "Личная Информация";
+"name" = "Имя";
+"birthday" = "День Рождения";
+"interests" = "Интересы";
+"interests_placeholder" = "например: Фотография, Кулинария, Йога";
+"gift_ideas" = "Идеи Подарков";
+"gift_ideas_placeholder" = "например: Набор для кулинарии, Книга рецептов, Коврик для йоги";
+"edit_person" = "Редактировать Человека";
+"add_person_title" = "Добавить Человека";
+"no_birthdays_on_date" = "Нет Дней Рождения %@";
+"until_birthday" = "До дня рождения: %d дней";
+
+// MARK: - Wishlist
+"wishlist" = "Вишлист";
+"add_wishlist_item" = "Добавить Элемент Вишлиста";
+"add_first_item" = "Добавить Первый Элемент";
+"no_wishlist_items" = "Пока нет элементов вишлиста";
+"gift_details" = "Детали Подарка";
+"gift_name" = "Название Подарка *";
+"price" = "Цена";
+"store" = "Магазин";
+"category" = "Категория";
+"priority" = "Приоритет";
+"link_optional" = "Ссылка (опционально)";
+"select" = "Выбрать";
+"low" = "Низкий";
+"medium" = "Средний";
+"high" = "Высокий";
+"open_link" = "Открыть Ссылку";
+"delete_item" = "Удалить Элемент";
+"delete_item_confirmation" = "Вы уверены, что хотите удалить этот элемент вишлиста?";
+
+// MARK: - Achievements
+"level" = "Уровень %d";
+"achievements" = "Достижения";
+"completed" = "Завершено";
+"in_progress" = "В Процессе";
+"xp_reward" = "+%d ОП";
+"achievement_detail" = "Детали Достижения";
+"status" = "Статус";
+"xp_reward_label" = "Награда ОП";
+
+// MARK: - Settings
+"profile" = "Профиль";
+"avatar" = "Аватар";
+"username" = "Имя Пользователя";
+"appearance" = "Внешний Вид";
+"color_scheme" = "Цветовая Схема";
+"purple" = "Фиолетовый";
+"blue" = "Синий";
+"green" = "Зеленый";
+"orange" = "Оранжевый";
+"dark_theme" = "Темная Тема";
+"language_notifications" = "Язык и Уведомления";
+"interface_language" = "Язык Интерфейса";
+"english" = "English";
+"russian" = "Русский";
+"about" = "О Приложении";
+"version" = "Версия";
+"build" = "Сборка";
+
+// MARK: - Months
+"january" = "Январь";
+"february" = "Февраль";
+"march" = "Март";
+"april" = "Апрель";
+"may" = "Май";
+"june" = "Июнь";
+"july" = "Июль";
+"august" = "Август";
+"september" = "Сентябрь";
+"october" = "Октябрь";
+"november" = "Ноябрь";
+"december" = "Декабрь";
+
+// MARK: - Weekdays
+"monday" = "Пн";
+"tuesday" = "Вт";
+"wednesday" = "Ср";
+"thursday" = "Чт";
+"friday" = "Пт";
+"saturday" = "Сб";
+"sunday" = "Вс";
+

@@ -1,0 +1,121 @@
+/* 
+  Localizable.strings
+  GiftMind
+
+  Created by Рома Котов on 27.09.2025.
+*/
+
+// MARK: - General
+"app_name" = "GiftMind";
+"ok" = "OK";
+"cancel" = "Cancel";
+"save" = "Save";
+"edit" = "Edit";
+"delete" = "Delete";
+"done" = "Done";
+"add" = "Add";
+"loading" = "Loading...";
+"error" = "Error";
+
+// MARK: - Navigation
+"calendar" = "Calendar";
+"upcoming" = "Upcoming";
+"achievements" = "Achievements";
+"settings" = "Settings";
+
+// MARK: - Calendar
+"birthday_tracker" = "Birthday Tracker";
+"add_person" = "Add Person";
+"add_first_person" = "Add First Person";
+"no_upcoming_birthdays" = "No Upcoming Birthdays";
+"add_people_to_start" = "Add people to start tracking their birthdays";
+"days_until_birthday" = "days until birthday";
+"today" = "Today!";
+"soon" = "Soon!";
+"days" = "%d days";
+
+// MARK: - Person
+"personal_information" = "Personal Information";
+"name" = "Name";
+"birthday" = "Birthday";
+"interests" = "Interests";
+"interests_placeholder" = "e.g., Photography, Cooking, Yoga";
+"gift_ideas" = "Gift Ideas";
+"gift_ideas_placeholder" = "e.g., Cooking set, Recipe book, Yoga mat";
+"edit_person" = "Edit Person";
+"add_person_title" = "Add Person";
+"no_birthdays_on_date" = "No Birthdays on %@";
+"until_birthday" = "Until birthday:  days";
+
+// MARK: - Wishlist
+"wishlist" = "Wishlist";
+"add_wishlist_item" = "Add Wishlist Item";
+"add_first_item" = "Add First Item";
+"no_wishlist_items" = "No wishlist items yet";
+"gift_details" = "Gift Details";
+"gift_name" = "Gift Name *";
+"price" = "Price";
+"store" = "Store";
+"category" = "Category";
+"priority" = "Priority";
+"link_optional" = "Link (optional)";
+"select" = "Select";
+"low" = "Low";
+"medium" = "Medium";
+"high" = "High";
+"open_link" = "Open Link";
+"delete_item" = "Delete Item";
+"delete_item_confirmation" = "Are you sure you want to delete this wishlist item?";
+
+// MARK: - Achievements
+"level" = "Level %d";
+"achievements" = "Achievements";
+"completed" = "Completed";
+"in_progress" = "In Progress";
+"xp_reward" = "+%d XP";
+"achievement_detail" = "Achievement Detail";
+"status" = "Status";
+"xp_reward_label" = "XP Reward";
+
+// MARK: - Settings
+"profile" = "Profile";
+"avatar" = "Avatar";
+"username" = "Username";
+"appearance" = "Appearance";
+"color_scheme" = "Color Scheme";
+"purple" = "Purple";
+"blue" = "Blue";
+"green" = "Green";
+"orange" = "Orange";
+"dark_theme" = "Dark Theme";
+"language_notifications" = "Language and Notifications";
+"interface_language" = "Interface Language";
+"english" = "English";
+"russian" = "Русский";
+"about" = "About";
+"version" = "Version";
+"build" = "Build";
+
+// MARK: - Months
+"january" = "January";
+"february" = "February";
+"march" = "March";
+"april" = "April";
+"may" = "May";
+"june" = "June";
+"july" = "July";
+"august" = "August";
+"september" = "September";
+"october" = "October";
+"november" = "November";
+"december" = "December";
+
+// MARK: - Weekdays
+"monday" = "Mon";
+"tuesday" = "Tue";
+"wednesday" = "Wed";
+"thursday" = "Thu";
+"friday" = "Fri";
+"saturday" = "Sat";
+"sunday" = "Sun";
+
