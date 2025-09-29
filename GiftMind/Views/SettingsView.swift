@@ -15,7 +15,10 @@ struct SettingsView: View {
     
     private let avatars = [
         "person.circle", "person.circle.fill", "person.2.circle",
-        "person.2.circle.fill", "person.3.circle", "person.3.circle.fill"
+        "person.2.circle.fill", "person.crop.circle", "person.crop.circle.fill",
+        // extra avatars
+        "person", "person.fill", "person.2", "person.2.fill",
+        "person.crop.square", "person.crop.square.fill"
     ]
     
     private let languages = [
@@ -510,9 +513,9 @@ struct AvatarPickerView: View {
                 )
                 .ignoresSafeArea()
                 
-                VStack(spacing: 24) {
+                VStack(spacing: 16) {
                     // Header
-                    VStack(spacing: 16) {
+                    VStack(spacing: 12) {
                         // Icon
                         ZStack {
                             Circle()
@@ -523,17 +526,17 @@ struct AvatarPickerView: View {
                                         endPoint: .bottomTrailing
                                     )
                                 )
-                                .frame(width: 80, height: 80)
-                                .shadow(color: Color.appPrimary.opacity(0.3), radius: 8, x: 0, y: 4)
+                                .frame(width: 56, height: 56)
+                                .shadow(color: Color.appPrimary.opacity(0.3), radius: 6, x: 0, y: 3)
                             
                             Image(systemName: "person.circle.fill")
-                                .font(.system(size: 32, weight: .semibold))
+                                .font(.system(size: 24, weight: .semibold))
                                 .foregroundColor(.white)
                         }
                         
                         VStack(spacing: 8) {
                             Text("select".localized() + " " + "avatar".localized())
-                                .font(.title)
+                                .font(.title3)
                                 .fontWeight(.bold)
                                 .foregroundStyle(
                                     LinearGradient(
@@ -549,10 +552,10 @@ struct AvatarPickerView: View {
                                 .multilineTextAlignment(.center)
                         }
                     }
-                    .padding(.top, 20)
+                    .padding(.top, 8)
                     
                     // Avatar grid
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 20) {
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 12) {
                         ForEach(avatars, id: \.self) { avatar in
                             Button(action: { onSelect(avatar) }) {
                                 ZStack {
@@ -570,33 +573,33 @@ struct AvatarPickerView: View {
                                                 endPoint: .bottomTrailing
                                             )
                                         )
-                                        .frame(width: 80, height: 80)
+                                        .frame(width: 64, height: 64)
                                         .shadow(
                                             color: currentAvatar == avatar ? Color.appPrimary.opacity(0.3) : Color.clear,
-                                            radius: currentAvatar == avatar ? 8 : 0,
+                                            radius: currentAvatar == avatar ? 6 : 0,
                                             x: 0,
-                                            y: currentAvatar == avatar ? 4 : 0
+                                            y: currentAvatar == avatar ? 3 : 0
                                         )
                                     
                                     Image(systemName: avatar)
-                                        .font(.system(size: 35, weight: .semibold))
+                                        .font(.system(size: 26, weight: .semibold))
                                         .foregroundColor(currentAvatar == avatar ? .white : Color.appPrimary)
                                     
                                     if currentAvatar == avatar {
                                         Circle()
-                                            .stroke(Color.white, lineWidth: 3)
-                                            .frame(width: 80, height: 80)
+                                            .stroke(Color.white, lineWidth: 2)
+                                            .frame(width: 64, height: 64)
                                     }
                                 }
                             }
                             .buttonStyle(PlainButtonStyle())
-                            .scaleEffect(currentAvatar == avatar ? 1.1 : 1.0)
+                            .scaleEffect(currentAvatar == avatar ? 1.06 : 1.0)
                             .animation(.spring(response: 0.3, dampingFraction: 0.7), value: currentAvatar)
                         }
                     }
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 16)
                     
-                    Spacer(minLength: 100)
+                    Spacer(minLength: 12)
                 }
                 
                 // Bottom button
@@ -612,7 +615,7 @@ struct AvatarPickerView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
-                        .padding(.vertical, 16)
+                        .padding(.vertical, 12)
                         .background(
                             RoundedRectangle(cornerRadius: 16)
                                 .fill(
@@ -622,11 +625,11 @@ struct AvatarPickerView: View {
                                         endPoint: .trailing
                                     )
                                 )
-                                .shadow(color: Color.appPrimary.opacity(0.3), radius: 8, x: 0, y: 4)
+                                .shadow(color: Color.appPrimary.opacity(0.3), radius: 6, x: 0, y: 3)
                         )
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 20)
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 12)
                 }
             }
             .navigationTitle("")

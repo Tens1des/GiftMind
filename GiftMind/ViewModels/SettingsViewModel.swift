@@ -62,12 +62,18 @@ class SettingsViewModel: ObservableObject {
         userSettings?.username = username
         userSettings?.updatedAt = Date()
         saveContext()
+        DispatchQueue.main.async {
+            self.objectWillChange.send()
+        }
     }
     
     func updateAvatar(_ avatar: String) {
         userSettings?.avatar = avatar
         userSettings?.updatedAt = Date()
         saveContext()
+        DispatchQueue.main.async {
+            self.objectWillChange.send()
+        }
     }
     
     func updateLanguage(_ language: String) {
